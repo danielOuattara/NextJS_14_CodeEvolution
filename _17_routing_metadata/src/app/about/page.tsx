@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About ",
+  title: "About Page",
   description: "About page for CodeEvolution NextJS 14 course",
 };
 

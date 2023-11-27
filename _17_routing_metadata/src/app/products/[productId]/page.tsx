@@ -1,5 +1,4 @@
 import type { Metadata, ResolvingMetadata } from "next";
-import { resolve } from "path";
 
 type Props = {
   params: { productId: string };
