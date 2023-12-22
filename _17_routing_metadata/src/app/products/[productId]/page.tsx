@@ -28,7 +28,7 @@ export async function generateMetadata(
     // openGraph: {
     // images: ["/some-specific-page-image.jpg", ...previousImages],
     // },
-    description: `description from product`,
+    // description: `description from product`,
   };
 }
 
