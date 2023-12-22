@@ -7,7 +7,7 @@ export default function NotFound() {
   );
 }
 
-const notFoundStyle = {
+const notFoundStyle: React.CSSProperties = {
   display: "flex",
   flexDirection: "column",
   //   justifyContent: "center",
