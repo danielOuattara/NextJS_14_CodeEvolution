@@ -12,7 +12,7 @@ export default function SingleProductLayout({
   );
 }
 
-const singleProduct = {
+const singleProduct: React.CSSProperties = {
   backgroundColor: "orange",
   padding: "10px",
   textAlign: "center",
