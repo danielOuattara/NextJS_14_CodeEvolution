@@ -8,7 +8,7 @@ export default function Custom404() {
   );
 }
 
-const notFoundStyle = {
+const notFoundStyle: React.CSSProperties = {
   display: "flex",
   flexDirection: "column",
   //   justifyContent: "center",

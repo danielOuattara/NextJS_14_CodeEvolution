@@ -12,7 +12,7 @@ export default function ProductsLayout({
   );
 }
 
-const allProducts = {
+const allProducts: React.CSSProperties = {
   border: "1px solid orange",
   padding: "10px",
   margin: "20px 10px",

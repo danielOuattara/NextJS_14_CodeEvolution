@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  // title: "Blog ",
-  title: { absolute: "Blog" },
+  // title: "Blog " /*  1 */,
+  title: { absolute: "Blog" } /* 2 */,
 };
 
 export default function Blog() {
