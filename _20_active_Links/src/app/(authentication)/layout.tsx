@@ -3,7 +3,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import "./styles.css";
 
-type AuthPropsType = {
+type TypeAuthProps = {
   children: React.ReactNode;
 };
 
@@ -11,9 +11,10 @@ const navLinks = [
   { link_name: "Register", href: "/register" },
   { link_name: "Login", href: "/login" },
   { link_name: "Forgot Password", href: "/forgot-password" },
+  { link_name: "Home", href: "/" },
 ];
 
-export default function AuthLayout({ children }: AuthPropsType) {
+export default function AuthLayout({ children }: TypeAuthProps) {
   const pathname = usePathname();
   return (
     <div>
@@ -29,6 +30,7 @@ export default function AuthLayout({ children }: AuthPropsType) {
           {link.link_name}
         </Link>
       ))}
+      {children}
     </div>
   );
 }
