@@ -1,7 +1,7 @@
 // pages/404.tsx
 export default function NotFound() {
   return (
-    <div>
+    <div style={notFoundStyle}>
       <h1>404 : Review not Found</h1>
     </div>
   );
@@ -12,4 +12,4 @@ const notFoundStyle = {
   flexDirection: "column",
   //   justifyContent: "center",
   alignItems: "center",
-};
+} as React.CSSProperties;

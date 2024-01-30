@@ -1,0 +1,10 @@
+.notFoundStyle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: orange;
+  border: 2px solid orange;
+  padding: 20px;
+  margin: 60px;
+}
