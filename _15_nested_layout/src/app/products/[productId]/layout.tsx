@@ -5,7 +5,7 @@ export default function SingleProductLayout({
 }) {
   return (
     <article style={singleProduct}>
-      <h2>Single product page</h2>
+      <h2>Single product page (layout)</h2>
       {children}
       {/* Carousel here */}
     </article>

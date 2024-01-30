@@ -5,14 +5,14 @@ export default function ProductsLayout({
 }) {
   return (
     <section style={allProducts}>
-      <h2>Welcome to products page</h2>
+      <h2>Welcome to products page (layout)</h2>
       {children}
       {/* Carousel here */}
     </section>
   );
 }
 
-const allProducts = {
+const allProducts: React.CSSProperties = {
   border: "1px solid orange",
   padding: "10px",
   margin: "20px 10px",
