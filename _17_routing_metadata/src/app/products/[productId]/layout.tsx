@@ -33,13 +33,13 @@ export async function generateMetadata(
     // openGraph: {
     // images: ["/some-specific-page-image.jpg", ...previousImages],
     // },
-    description: `description for product ${params.productId}`,
+    description: `description for product ${params.productId} from dynamic product layout`,
   };
 }
 
 //---------------------------------------------------------------
 
-type LayoutPropsType = {
+type TypeLayoutProps = {
   children: React.ReactNode;
   params: string;
 };
@@ -47,7 +47,7 @@ type LayoutPropsType = {
 export default function SingleProductLayout({
   children,
   params,
-}: LayoutPropsType) {
+}: TypeLayoutProps) {
   return (
     <article style={singleProduct}>
       <h2>Single product page</h2>
