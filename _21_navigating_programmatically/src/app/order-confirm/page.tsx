@@ -7,7 +7,7 @@
 //   useEffect(() => {
 //     const timer = setTimeout(() => {
 //       router.push("/");
-//     }, 3000);
+//     }, 5000);
 
 //     return () => {
 //       clearTimeout(timer);
@@ -17,7 +17,7 @@
 //   return (
 //     <>
 //       <h1>Your Order was Successful ! </h1>
-//       <p>You will be redirected to home page in {}</p>
+//       <p>You will be redirected to home page in 5 secondes</p>
 //     </>
 //   );
 // }
