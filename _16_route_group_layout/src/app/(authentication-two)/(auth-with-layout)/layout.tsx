@@ -10,7 +10,15 @@ export default function AuthLayout({
 }) {
   return (
     <>
-      <h1 style={{ border: "3px solid green" }}>Inner layout</h1>
+      <h1
+        style={{
+          border: "3px solid green",
+          padding: "20px",
+          backgroundColor: "orange",
+        }}
+      >
+        Inner layout
+      </h1>
       {children}
     </>
   );
