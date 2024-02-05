@@ -1,9 +1,6 @@
-"use client"
-import { notFound } from "next/navigation";
+"use client";
 
-function getRandomInteger(count: number) {
-  return Math.floor(Math.random() * count);
-}
+import { notFound } from "next/navigation";
 
 type Params = {
   params: {
@@ -11,6 +8,10 @@ type Params = {
     reviewId: string;
   };
 };
+
+function getRandomInteger(count: number) {
+  return Math.floor(Math.random() * count);
+}
 
 export default function SingleProductReview({ params }: Params) {
   const randomInteger: number = getRandomInteger(2);
