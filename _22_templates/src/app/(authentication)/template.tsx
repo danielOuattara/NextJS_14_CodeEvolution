@@ -4,17 +4,16 @@ import { usePathname } from "next/navigation";
 import "./styles.css";
 import { useState } from "react";
 
+type TypeChildren = {
+  children: React.ReactNode;
+};
 const navLinks = [
   { link_name: "Register", href: "/register" },
   { link_name: "Login", href: "/login" },
   { link_name: "Forgot Password", href: "/forgot-password" },
 ];
 
-export default function TemplateLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function TemplateLayout({ children }: TypeChildren) {
   const pathname = usePathname();
 
   const [input, setInput] = useState("");
