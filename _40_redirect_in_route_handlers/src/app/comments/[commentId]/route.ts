@@ -8,6 +8,7 @@ type TypeContext = {
 };
 
 //--------------------------------------------------------------------
+
 export async function GET(request: Request, context: TypeContext) {
   const comment = comments.find(
     (item) => item.id === parseInt(context.params.commentId),
@@ -23,6 +24,9 @@ export async function GET(request: Request, context: TypeContext) {
 
   /* Not Found: Redirect */
 
+  /*  Not found: redirect 
+  ----------------------------*/
+
   if (!comment) {
     return redirect("/comments");
   }
@@ -31,6 +35,7 @@ export async function GET(request: Request, context: TypeContext) {
 }
 
 //--------------------------------------------------------------------
+
 export async function PATCH(request: Request, context: TypeContext) {
   const commentIndex = comments.findIndex(
     (item) => item.id === parseInt(context.params.commentId),
@@ -49,6 +54,7 @@ export async function PATCH(request: Request, context: TypeContext) {
 }
 
 //--------------------------------------------------------------------
+
 export async function DELETE(request: Request, context: TypeContext) {
   const commentIndex = comments.findIndex(
     (item) => item.id === parseInt(context.params.commentId),

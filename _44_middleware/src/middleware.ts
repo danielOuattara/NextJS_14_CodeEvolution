@@ -1,3 +1,6 @@
+/* use a config object
+-----------------------*/
+
 // import { type NextRequest, NextResponse } from "next/server";
 
 // export function middleware(request: NextRequest) {
@@ -10,6 +13,9 @@
 
 //--------------------------------------------------------------------
 
+/* use a conditional statement
+------------------------------*/
+
 // import { type NextRequest, NextResponse } from "next/server";
 
 // export function middleware(request: NextRequest) {
@@ -20,6 +26,9 @@
 
 //--------------------------------------------------------------------
 
+/* use rewrite
+---------------*/
+
 // import { type NextRequest, NextResponse } from "next/server";
 
 // export function middleware(request: NextRequest) {
@@ -29,6 +38,9 @@
 // }
 
 //--------------------------------------------------------------------
+
+/* use cookie & headers
+--------------------------*/
 
 import { type NextRequest, NextResponse } from "next/server";
 
