@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  // title: "Next.js",
+  // title: "Next.js", // basic
   title: {
     absolute: "",
     default: "Next.JS 14 Tutorial CodeEvolution",
