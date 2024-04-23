@@ -16,6 +16,8 @@ const navLinks = [
 
 export default function AuthLayout({ children }: TypeAuthProps) {
   const pathname = usePathname();
+  console.log("pathname = ", pathname);
+
   return (
     <div>
       {navLinks.map((link) => (

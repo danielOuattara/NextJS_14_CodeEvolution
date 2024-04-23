@@ -30,16 +30,16 @@ export default function RootLayout({
   );
 }
 
-const bodyStyles = {
+const bodyStyles: React.CSSProperties = {
   display: "flex",
   flexDirection: "column",
   justifyContent: "",
 };
-const styles = {
+const styles: React.CSSProperties = {
   backgroundColor: "lightblue",
   padding: "10px",
 };
 
-const mainStyles = {
+const mainStyles: React.CSSProperties = {
   height: "75vh",
 };
