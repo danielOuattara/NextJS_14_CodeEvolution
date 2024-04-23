@@ -19,7 +19,7 @@ export async function generateMetadata(
   // const previousImages = (await parent).openGraph?.images || [];
 
   const productTitle: string = await new Promise((resolve) =>
-    setTimeout(() => resolve(`Super iPhone 40${params.productId}`), 3000),
+    setTimeout(() => resolve(`Super iPhone ${params.productId}`), 3000),
   );
 
   return {
