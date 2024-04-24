@@ -1,12 +1,9 @@
 /* 
-template does not preserves the state for shared UI.
-template mounts the parts of the content of the 
-new loaded page 
-and does not conserve the template of the 
-already mounted elements
+layout preserves the state for shared UI.
+layout only mounts the parts of the content of the new loaded page 
+and also conserves the layout of the already mounted elements
 
-template does remount shared component
-
+layout does not remount shared component, resulting in better performance
 */
 
 "use client";
@@ -24,7 +21,7 @@ const navLinks = [
   { link_name: "Forgot Password", href: "/forgot-password" },
 ];
 
-export default function Templatetemplate({ children }: TypeChildren) {
+export default function TemplateLayout({ children }: TypeChildren) {
   const pathname = usePathname();
   const [input, setInput] = useState("");
 
