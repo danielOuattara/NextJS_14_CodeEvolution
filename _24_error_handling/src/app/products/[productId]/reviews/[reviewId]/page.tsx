@@ -18,9 +18,11 @@ export default function SingleProductReview({ params }: Params) {
   if (randomInteger === 1) {
     throw new Error("Error loading review !");
   }
+
   if (parseInt(params.reviewId) > 1000) {
     notFound();
   }
+
   return (
     <h1>
       {" "}
