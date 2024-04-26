@@ -8,7 +8,7 @@ type TypeContext = {
 
 export async function GET(_request: Request, context: TypeContext) {
   const comment = comments.find(
-    (item) => item.id === parseInt(context.params.commentId),
+    (item) => item.id === parseInt(context.params.commentId, 10),
   );
   return Response.json({ comment });
 }
