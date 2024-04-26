@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+// import AuthContextProvider from "@/context/AuthContext";
 
 export const metadata: Metadata = {
   // title: "Next.js",
@@ -30,11 +31,6 @@ export default function RootLayout({
   );
 }
 
-const bodyStyles = {
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "",
-};
 const styles = {
   backgroundColor: "lightblue",
   padding: "10px",

@@ -1,6 +1,4 @@
-import Notifications from "@/components/Notifications";
-import RevenueMetrics from "@/components/RevenueMetrics";
-import UserAnalytics from "@/components/UserAnalytics";
+import { Notifications, RevenueMetrics, UserAnalytics } from "@/components";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -19,26 +17,23 @@ export default function RootLayout({
 }) {
   return (
     <>
-      <main style={mainStyles}>
-        {children}
-        <UserAnalytics />
-        <RevenueMetrics />
-        <Notifications />
-      </main>
+      {children}
+      <div style={{ display: "flex", gap: "1.25rem", maxWidth: "50%" }}>
+        <div
+          style={{ display: "flex", flexDirection: "column", gap: "1.25rem" }}
+        >
+          <div style={{ display: "flex" }}>
+            {" "}
+            <UserAnalytics />
+          </div>
+          <div style={{ display: "flex" }}>
+            <RevenueMetrics />
+          </div>
+        </div>
+        <div style={{ display: "flex" }}>
+          <Notifications />
+        </div>
+      </div>
     </>
   );
 }
-
-const bodyStyles = {
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "",
-};
-const styles = {
-  backgroundColor: "lightblue",
-  padding: "10px",
-};
-
-const mainStyles = {
-  height: "75vh",
-};

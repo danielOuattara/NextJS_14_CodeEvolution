@@ -1,5 +1,4 @@
-import Card from "@/components/Card";
-import Link from "next/link";
+import { Card } from "@/components";
 
 export default function Login() {
   return (

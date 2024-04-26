@@ -7,10 +7,3 @@ export default function Custom404() {
     </div>
   );
 }
-
-const notFoundStyle = {
-  display: "flex",
-  flexDirection: "column",
-  //   justifyContent: "center",
-  alignItems: "center",
-};
