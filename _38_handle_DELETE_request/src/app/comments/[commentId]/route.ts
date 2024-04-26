@@ -10,7 +10,7 @@ type TypeContext = {
 
 export async function GET(_request: Request, context: TypeContext) {
   const comment = comments.find(
-    (item) => item.id === parseInt(context.params.commentId),
+    (item) => item.id === parseInt(context.params.commentId, 10),
   );
 
   if (!comment) {
@@ -25,7 +25,7 @@ export async function GET(_request: Request, context: TypeContext) {
 
 export async function PATCH(request: Request, context: TypeContext) {
   const commentIndex = comments.findIndex(
-    (item) => item.id === parseInt(context.params.commentId),
+    (item) => item.id === parseInt(context.params.commentId, 10),
   );
   if (commentIndex === -1) {
     return new Response("Comment Not Found", {
@@ -44,8 +44,9 @@ export async function PATCH(request: Request, context: TypeContext) {
 
 export async function DELETE(_request: Request, context: TypeContext) {
   const commentIndex = comments.findIndex(
-    (item) => item.id === parseInt(context.params.commentId),
+    (item) => item.id === parseInt(context.params.commentId, 10),
   );
+
   if (commentIndex === -1) {
     return new Response("Comment Not Found", {
       status: 404,
@@ -54,5 +55,5 @@ export async function DELETE(_request: Request, context: TypeContext) {
 
   comments.splice(commentIndex, 1);
 
-  return Response.json({ comments });
+  return Response.json(comments);
 }
