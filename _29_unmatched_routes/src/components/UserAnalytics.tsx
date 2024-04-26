@@ -1,3 +1,5 @@
+import Card from "./Card";
+
 export default function UserAlaytics() {
-  return <div>UserAlaytics</div>;
+  return <Card>UserAlaytics</Card>;
 }

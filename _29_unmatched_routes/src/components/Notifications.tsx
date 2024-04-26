@@ -1,3 +1,5 @@
+import Card from "./Card";
+
 export default function Notifications() {
-  return <div>Notifications</div>;
+  return <Card>Notifications</Card>;
 }

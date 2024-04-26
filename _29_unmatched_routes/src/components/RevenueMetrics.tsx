@@ -1,3 +1,5 @@
+import Card from "./Card";
+
 export default function RevenueMetrics() {
-  return <div>RevenueMetrics</div>;
+  return <Card>RevenueMetrics</Card>;
 }

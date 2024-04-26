@@ -8,7 +8,7 @@ export default function Card({ children }: TypeProps) {
 
 const cardStyle: React.CSSProperties = {
   padding: "100px",
-  margin: "10px",
+  width: "100%",
   boxShadow: "0 4px 8px 0 rgba(0,0,0,0.32)",
   border: "1px solid #ddd",
   display: "flex",
