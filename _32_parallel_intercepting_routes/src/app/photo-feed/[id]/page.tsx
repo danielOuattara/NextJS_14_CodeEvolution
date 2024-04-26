@@ -6,7 +6,7 @@ export default function PhotoPage({
 }: {
   params: { id: string };
 }) {
-  const photo: TypeWonderImage = wondersImages.find((p) => p.id === id)!;
+  const photo = wondersImages.find((p) => p.id === id) as TypeWonderImage;
   return (
     <div className="container mx-auto my-10">
       <div className="w-1/2 mx-auto">
