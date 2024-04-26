@@ -9,20 +9,28 @@ type TypeContext = {
 
 //--------------------------------------------------------------------
 
+// export async function GET(request: Request, context: TypeContext) {
+//   const comment = comments.find(
+//     (item) => item.id === parseInt(context.params.commentId),
+//   );
+
+//   /*  Not found: throw a 404
+//   ----------------------------*/
+//   if (!comment) {
+//     return new Response("Comment Not Found", {
+//       status: 404,
+//     });
+//   }
+
+//   return Response.json({ comment });
+// }
+
+//-------- OR
+
 export async function GET(request: Request, context: TypeContext) {
   const comment = comments.find(
     (item) => item.id === parseInt(context.params.commentId),
   );
-
-  /*  Not found: throw a 404 
-  ----------------------------*/
-  // if (!comment) {
-  //     return new Response("Comment Not Found", {
-  //         status: 404
-  //     })
-  // }
-
-  /* Not Found: Redirect */
 
   /*  Not found: redirect 
   ----------------------------*/
