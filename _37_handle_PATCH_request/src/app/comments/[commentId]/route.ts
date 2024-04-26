@@ -8,7 +8,7 @@ type TypeContext = {
 
 //--------------------------------------------------------------------
 
-export async function GET(request: Request, context: TypeContext) {
+export async function GET(_request: Request, context: TypeContext) {
   const comment = comments.find(
     (item) => item.id === parseInt(context.params.commentId),
   );
@@ -25,7 +25,7 @@ export async function GET(request: Request, context: TypeContext) {
 
 export async function PATCH(request: Request, context: TypeContext) {
   const commentIndex = comments.findIndex(
-    (item) => item.id === parseInt(context.params.commentId),
+    (item) => item.id === parseInt(context.params.commentId, 10),
   );
 
   if (commentIndex === -1) {
@@ -38,7 +38,7 @@ export async function PATCH(request: Request, context: TypeContext) {
 
   comments[commentIndex] = { ...comments[commentIndex], ...body };
 
-  return Response.json({ comments });
+  return Response.json(comments);
 }
 
 //--- OR
