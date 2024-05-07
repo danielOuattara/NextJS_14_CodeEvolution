@@ -13,8 +13,8 @@
 
 //--------------------------------------------------------------------
 
-/* use a conditional statement
-------------------------------*/
+/* use a conditional statement + redirect
+------------------------------------------ */
 
 // import { type NextRequest, NextResponse } from "next/server";
 
@@ -26,8 +26,8 @@
 
 //--------------------------------------------------------------------
 
-/* use rewrite
----------------*/
+/* use a conditional statement + use rewrite
+--------------------------------------------- */
 
 // import { type NextRequest, NextResponse } from "next/server";
 
