@@ -10,12 +10,7 @@ export default function DashboardPage() {
       <h1>Dashboard Page</h1>
       <button
         onClick={() => console.log("Clicked!")}
-        style={{
-          background: "lightblue",
-          padding: "5px 30px",
-          margin: "10px",
-          borderRadius: "5px",
-        }}
+        className="bg-blue-300 py-2 px-8 m-3 rounded-md"
       >
         click
       </button>
@@ -23,7 +18,7 @@ export default function DashboardPage() {
       <label htmlFor="name">
         Name:
         <input
-          style={{ border: "1px solid lightblue", marginLeft: "10px" }}
+          className="border border-blue-300 rounded-[4px] ml-4"
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
