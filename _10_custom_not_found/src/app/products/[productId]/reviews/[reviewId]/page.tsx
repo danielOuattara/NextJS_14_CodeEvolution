@@ -11,7 +11,7 @@ export default function SingleProductReview({
   params: { productId, reviewId },
 }: Params) {
   if (parseInt(reviewId) > 1000) {
-    return notFound();
+    notFound();
   }
   return (
     <h1>
