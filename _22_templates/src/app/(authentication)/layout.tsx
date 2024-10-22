@@ -1,9 +1,11 @@
 /* 
-layout preserves the state for shared UI.
-layout only mounts the parts of the content of the new loaded page 
-and also conserves the layout of the already mounted elements
+- layout preserves the state for shared UI.
+- layout only mounts the parts for the content of 
+the new loaded page and also conserves the layout 
+of the already mounted elements
 
-layout does not remount shared component, resulting in better performance
+- layout does not remount shared component, resulting 
+in better performance
 */
 
 "use client";
@@ -21,15 +23,23 @@ const navLinks = [
   { link_name: "Forgot Password", href: "/forgot-password" },
 ];
 
-export default function TemplateLayout({ children }: TypeChildren) {
+export default function Layout({ children }: TypeChildren) {
   const pathname = usePathname();
   const [input, setInput] = useState("");
 
   return (
-    <div>
+    <div
+      style={{
+        border: "1px solid blue",
+        maxWidth: "80%",
+        margin: "0 auto",
+        padding: "2rem",
+      }}
+    >
+      <h2>Layout</h2>
       <div>
         <label>
-          user :
+          user in Layout:
           <input
             style={{ border: "1px solid gray" }}
             type="text"

@@ -24,15 +24,22 @@ const navLinks = [
   { link_name: "Forgot Password", href: "/forgot-password" },
 ];
 
-export default function Templatetemplate({ children }: TypeChildren) {
+export default function Template({ children }: TypeChildren) {
   const pathname = usePathname();
   const [input, setInput] = useState("");
 
   return (
-    <div>
+    <div
+      style={{
+        border: "1px solid orange",
+        margin: "2rem auto",
+        padding: "2rem",
+      }}
+    >
+      <h2>Template</h2>
       <div>
         <label>
-          user :
+          user in template :
           <input
             style={{ border: "1px solid gray" }}
             type="text"
