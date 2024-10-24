@@ -14,17 +14,21 @@ export const metadata: Metadata = {
 
 //-----
 
-export default function RootLayout({
-  children,
-}: {
+type TypeProps = {
   children: React.ReactNode;
-}) {
+};
+
+export default function RootLayout({ children }: TypeProps) {
   return (
     <>
       {children}
-      <div style={{ display: "flex", gap: "1.25rem", maxWidth: "50%" }}>
+      <div style={{ display: "flex", gap: "1.25rem" }}>
         <div
-          style={{ display: "flex", flexDirection: "column", gap: "1.25rem" }}
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "1.25rem",
+          }}
         >
           <div style={{ display: "flex" }}>
             {" "}

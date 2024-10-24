@@ -9,6 +9,10 @@ export default function Home() {
       <Link href={"/products"}>Visit Products</Link>
       <br />
       <Link href={"/order-product"}>Order Product</Link>
+      <br />
+      <Link href={"/dashboard-old-bundle"}>Dashboard components bundled</Link>
+      <br />
+      <Link href={"/dashboard-parallel-routes"}>Dashboard parallel route</Link>
     </>
   );
 }

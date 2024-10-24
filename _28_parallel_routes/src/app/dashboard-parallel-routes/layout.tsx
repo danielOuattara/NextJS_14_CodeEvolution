@@ -13,15 +13,15 @@ export const metadata: Metadata = {
 
 type TypeRootLayoutProps = {
   children: React.ReactNode;
-  useranalytics: React.ReactNode;
-  revenuemetrics: React.ReactNode;
+  userAnalytics: React.ReactNode;
+  revenueMetrics: React.ReactNode;
   notifications: React.ReactNode;
 };
 
 export default function RootLayout({
   children,
-  useranalytics,
-  revenuemetrics,
+  userAnalytics,
+  revenueMetrics,
   notifications,
 }: TypeRootLayoutProps) {
   return (
@@ -31,8 +31,8 @@ export default function RootLayout({
         <div
           style={{ display: "flex", flexDirection: "column", gap: "1.25rem" }}
         >
-          <div style={{ display: "flex" }}>{useranalytics}</div>
-          <div style={{ display: "flex" }}>{revenuemetrics}</div>
+          <div style={{ display: "flex" }}>{userAnalytics}</div>
+          <div style={{ display: "flex" }}>{revenueMetrics}</div>
         </div>
         <div style={{ display: "flex" }}>{notifications}</div>
       </div>
