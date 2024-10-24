@@ -1,12 +1,14 @@
 import "./style.css";
 
-export default function Layout(props: {
-  modal: React.ReactNode;
+type TypeProps = {
+  modalSlot: React.ReactNode;
   children: React.ReactNode;
-}) {
+};
+
+export default function Layout(props: TypeProps) {
   return (
     <>
-      {props.modal}
+      {props.modalSlot}
       {props.children}
     </>
   );

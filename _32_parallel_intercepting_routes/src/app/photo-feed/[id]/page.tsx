@@ -1,12 +1,15 @@
+import { wondersImages, type TypeWonderImage } from "./../wonder";
 import Image from "next/image";
-import { wondersImages, TypeWonderImage } from "./../wonder";
 
-export default function PhotoPage({
-  params: { id },
-}: {
+type TypeProps = {
   params: { id: string };
-}) {
-  const photo = wondersImages.find((p) => p.id === id) as TypeWonderImage;
+};
+
+export default function SinglePhotoPage({ params }: TypeProps) {
+  const photo = wondersImages.find(
+    (photo) => photo.id === params.id,
+  ) as TypeWonderImage;
+
   return (
     <div className="container mx-auto my-10">
       <div className="w-1/2 mx-auto">
@@ -18,7 +21,6 @@ export default function PhotoPage({
           src={photo.src}
           className="w-full object-cover aspect-square "
         />
-
         <div className="bg-white py-4">
           <h3>{photo.photographer}</h3>
           <h3>{photo.location}</h3>

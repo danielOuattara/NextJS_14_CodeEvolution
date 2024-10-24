@@ -1,13 +1,15 @@
 import Image from "next/image";
-import { wondersImages, TypeWonderImage } from "./../../../wonder";
+import { wondersImages, type TypeWonderImage } from "./../../../wonder";
 import Modal from "@/components/modal";
 
-export default function PhotoModal({
-  params: { id },
-}: {
+type TypeProps = {
   params: { id: string };
-}) {
-  const photo: TypeWonderImage = wondersImages.find((p) => p.id === id)!;
+};
+
+export default function PhotoModal({ params }: TypeProps) {
+  const photo: TypeWonderImage = wondersImages.find(
+    (photo) => photo.id === params.id,
+  )!;
 
   return (
     <Modal>
