@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-// import AuthContextProvider from "@/context/AuthContext";
+import AuthContextProvider from "@/context/AuthContext";
 
 export const metadata: Metadata = {
   // title: "Next.js",
@@ -22,7 +22,9 @@ export default function RootLayout({
         <header style={styles}>
           <p>Header</p>
         </header>
-        <main style={mainStyles}>{children}</main>
+        <main style={mainStyles}>
+          <AuthContextProvider>{children}</AuthContextProvider>
+        </main>
         <footer style={styles}>
           <p>Footer</p>
         </footer>
